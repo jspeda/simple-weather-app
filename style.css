@@ -5,6 +5,7 @@
 body {
   background-color: #e5e7e8;
   color: #383838;
+
 }
 .header {
   text-align: center;
@@ -20,9 +21,6 @@ body {
   font-family: 'Miriam Libre', sans-serif;
 }
 
-.topblock {
-}
-
 .location {
   font-size: 40px;
   padding-bottom: 10px;
@@ -30,9 +28,6 @@ body {
 
 .condition {
   font-size: 30px;
-}
-
-.bottomblock {
 }
 
 .temp {
