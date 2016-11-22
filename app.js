@@ -24,11 +24,12 @@ $(document).ready(function () {
     console.log(tempK);
     console.log(tempF);
     console.log(tempC);
+    tempColorChanger(tempF);
 
     $('.location').html(location);
     $('.condition').html(condition);
-    $('.celsius').html(tempC + "&deg;");
-    $('.temp').html(tempF +"&deg;");
+    $('.celsius').html(tempC + "&deg; c");
+    $('.temp').html(tempF +"&deg; f");
     $('.temp').click(function() {
       $('.celsius').show();
       $('.temp').hide();
@@ -50,6 +51,27 @@ function kelvinToFahrenheit(kelvin) {
 function kelvinToCelsius(kelvin) {
   var result = kelvin - 273.15;
   return Math.round(result * 10) / 10;
+}
+
+function tempColorChanger(temp) {
+  if (temp <= 32) {
+    $('.bottomblock').css('color', '#325184');
+  }
+  else if (temp <= 50) {
+    $('.bottomblock').css('color', '#638899');
+  }
+  else if (temp <= 65) {
+    $('.bottomblock').css('color', '#77af98');
+  }
+  else if (temp <= 75) {
+    $('.bottomblock').css('color', '#71b778');
+  }
+  else if (temp <= 85) {
+    $('.bottomblock').css('color', '#ed8823');
+  }
+  else {
+    $('.bottomblock').css('color', '#e52222');
+  }
 }
 
 });

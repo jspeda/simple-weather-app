@@ -1,16 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Kumar+One+Outline');
 @import url('https://fonts.googleapis.com/css?family=Miriam+Libre');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow');
 
+body {
+  background-color: #e5e7e8;
+  color: #383838;
+}
 .header {
   text-align: center;
   margin-top: 50;
-  font-size: 75px;
-  font-family: 'Kumar One Outline', cursive;
+  font-size: 80px;
+  font-family: 'Archivo Narrow', sans-serif;
+  letter-spacing: 4px;
 }
 
 .main {
   margin: 0 auto;
-  width: 400px;
+  width: 700px;
   font-family: 'Miriam Libre', sans-serif;
 }
 
