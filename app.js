@@ -27,11 +27,15 @@ $(document).ready(function () {
 
     $('.location').html(location);
     $('.condition').html(condition);
-    $('.temp celsius').html(tempC + "&deg;");
+    $('.celsius').html(tempC + "&deg;");
     $('.temp').html(tempF +"&deg;");
-    // $('.temp').toggleClass('c');
-    $('.temp').click(function(){
-       $('.temp').html(tempC + "&deg;");
+    $('.temp').click(function() {
+      $('.celsius').show();
+      $('.temp').hide();
+    });
+    $('.celsius').click(function() {
+      $('.temp').show();
+      $('.celsius').hide();
     });
   });
 
