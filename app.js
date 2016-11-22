@@ -30,9 +30,9 @@ $(document).ready(function () {
     $('.temp celsius').html(tempC + "&deg;");
     $('.temp').html(tempF +"&deg;");
     // $('.temp').toggleClass('c');
-    // $('.temp').click(function(){
-    //   $('.temp').html(tempC + "&deg;");
-    // });
+    $('.temp').click(function(){
+       $('.temp').html(tempC + "&deg;");
+    });
   });
 
   }
