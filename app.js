@@ -27,18 +27,14 @@ $(document).ready(function () {
 
     $('.location').html(location);
     $('.condition').html(condition);
+    $('.temp celsius').html(tempC + "&deg;");
     $('.temp').html(tempF +"&deg;");
-    // $('.temp c').html(tempC + "&deg;");
     // $('.temp').toggleClass('c');
-    $('p').toggle(function() {
-      $('.temp').html(tempC + "&deg;");
-      $('p').html('to C');
-    }, function() {
-      $('p').html('to F');
-      $('.temp').html(tempF + "&deg;");
-    });
+    // $('.temp').click(function(){
+    //   $('.temp').html(tempC + "&deg;");
+    // });
+  });
 
-    });
   }
 
 // converts Kelvin to Fahrenheit and rounds to the first decimal.

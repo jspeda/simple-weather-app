@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Kumar+One+Outline');
+@import url('https://fonts.googleapis.com/css?family=Miriam+Libre');
+
 .header {
   text-align: center;
   margin-top: 50;
   font-size: 75px;
+  font-family: 'Kumar One Outline', cursive;
 }
 
 .main {
   margin: 0 auto;
   width: 400px;
+  font-family: 'Miriam Libre', sans-serif;
 }
 
 .topblock {
@@ -29,6 +34,6 @@
   font-size: 60px;
 }
 
-.temp c{
+.temp celsius{
   display: none;
 }
